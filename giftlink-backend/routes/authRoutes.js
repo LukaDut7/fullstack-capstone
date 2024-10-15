@@ -11,7 +11,7 @@ const logger = pino();  // Create a Pino logger instance
 const { body, validationResult } = require('express-validator');
 //Create JWT secret
 dotenv.config();
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = 'setasecret';
 
 router.post('/register', async (req, res) => {
     try {

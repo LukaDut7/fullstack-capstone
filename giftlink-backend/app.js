@@ -35,8 +35,8 @@ app.use(pinoHttp({ logger }));
 // Gift API Task 2: add the giftRoutes to the server by using the app.use() method.
 //{{insert code here}}
 
-app.use('./api/gifts' , giftRoutes); 
-app.use('./api/search' , searchRoutes);
+app.use('/api/gifts' , giftRoutes); 
+app.use('/api/search' , searchRoutes);
 app.use('/api/auth', authRoutes);
 // Global Error Handler
 app.use((err, req, res, next) => {
@@ -45,7 +45,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get("/",(req,res)=>{
-    res.send("Inside the server")
+    res.send("Hello World")
 })
 
 app.listen(port, () => {
