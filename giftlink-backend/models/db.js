@@ -3,7 +3,7 @@ require('dotenv').config();
 const MongoClient = require('mongodb').MongoClient;
 
 // MongoDB connection URL with authentication options
-let url = `mongodb://localhost:27017`;
+let url = `mongodb://root:0Zo4N5A4Kbdf5mchHUVwMOXb@172.21.64.47:27017`;
 let dbInstance = null;
 const dbName = "giftdb";
 
